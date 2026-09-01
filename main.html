@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Happy Birthday ♡ Made For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="her-photo-5.png" />
+  <link rel="preload" as="image" href="her-photo-6.png" />
+</head>
+
+<body class="main-body">
+  <!-- Top Scrollytelling Progress Indicator -->
+  <div class="scroll-progress-wrap" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Ambient Floating Particles & Fireflies Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Confetti & Fireworks Celebration Canvas -->
+  <canvas id="celebration-canvas" class="celebration-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Audio & Mood Controls -->
+  <header class="top-nav-bar" aria-label="Quick navigation and music">
+    <div class="nav-brand">
+      <span class="heart-pulse">♡</span>
+      <span class="brand-text" id="active-chapter-text">Chapter I • The Beginning</span>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-reminder-btn" id="nav-reminder-btn" type="button" aria-label="Open gentle reminder letter">
+        <span class="reminder-nav-icon">💌</span>
+        <span class="reminder-nav-label">Gentle Reminder</span>
+      </button>
+      <button class="nav-music-btn" id="nav-music-toggle" type="button" aria-label="Toggle background music">
+        <span class="music-icon">♫</span>
+        <span class="music-label">Play Soundtrack</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="story-page">
+    <!-- CHAPTER 1: HERO COVER -->
+    <section class="story-panel cover-panel reveal" id="cover-section" data-chapter="Chapter I • The Beginning">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 01</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="cover-layout">
+        <div class="cover-polaroid-wrap">
+          <div class="cover-polaroid" id="hero-polaroid">
+            <div class="polaroid-tape" aria-hidden="true"></div>
+            <div class="polaroid-sparkle" aria-hidden="true">✦</div>
+            <div class="polaroid-img-frame">
+              <img src="her-photo.jpeg" alt="The birthday girl smiling" />
+            </div>
+            <div class="polaroid-caption-wrap">
+              <p class="hero-polaroid-caption">celebrating the most wonderful soul ♡</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover-copy">
+          <div class="badge-pill">A Special Birthday Story</div>
+          <h1 class="main-hero-title">A Little Corner of the Universe</h1>
+          <h2 class="main-hero-subtitle">Made Just For You</h2>
+          <p class="hero-description">
+            Somewhere between a soft daydream, cherished memories, and heartfelt wishes for your new year.
+          </p>
+          <div class="hero-cta-wrap">
+            <a href="#cake-section" class="hero-wish-btn">Make a Birthday Wish 🎂</a>
+            <span class="hero-hint-text">or scroll slowly through the story ↓</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>scroll slowly into the memories</span>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2: THE LITTLE THINGS (INTERACTIVE COMPLIMENT CARDS) -->
+    <section class="story-panel notes-panel reveal" id="notes-section" data-chapter="Chapter II • The Little Things">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 02</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="section-heading">
+        <span class="kicker">the little things & melodies ♫</span>
+        <h2 class="section-title">Reasons Why You Light Up Every Room</h2>
+        <p class="section-subtitle">Click any card to uncover sweet musical thoughts & hidden reminders ♡</p>
+      </div>
+
+      <div class="notes-stack">
+        <article class="note-card note-a" tabindex="0" role="button" aria-label="Compliment card 1">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">The way you hum and sing along to melodies turns ordinary moments into pure magic ♫
+          </div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+
+        <article class="note-card note-b" tabindex="0" role="button" aria-label="Compliment card 2">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">Your voice has a gentle, soothing rhythm that makes the whole world feel peaceful.
+          </div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+
+        <article class="note-card note-c" tabindex="0" role="button" aria-label="Compliment card 3">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">You feel music with your whole heart, and that's what makes listening with you so
+            special.</div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+
+        <article class="note-card note-d" tabindex="0" role="button" aria-label="Compliment card 4">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">Somewhere between your favorite playlist and your sweet voice is my absolute
+            favorite place to be.</div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+
+        <article class="note-card note-e" tabindex="0" role="button" aria-label="Compliment card 5">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">Your laughter and singing have a warmth that makes everyone around you feel right at
+            home ♫</div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+
+        <article class="note-card note-f" tabindex="0" role="button" aria-label="Compliment card 6">
+          <div class="note-pin" aria-hidden="true"></div>
+          <div class="note-content">You have a rare, beautiful melody in your spirit that makes life feel like poetry ♡
+          </div>
+          <div class="note-footer">tap for more ✨</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3: MEMORY SCRAPBOOK WALL (INCLUDING HER-PHOTO-5 & HER-PHOTO-6) -->
+    <section class="story-panel memory-panel reveal" id="memory-section" data-chapter="Chapter III • Cherished Moments">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 03</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="section-heading">
+        <span class="kicker">our scrapbook</span>
+        <h2 class="section-title">A Gallery of Cherished Moments</h2>
+        <p class="section-subtitle">Click any photo to view in high resolution with its memory note ♡</p>
+      </div>
+
+      <div class="masonry-grid">
+        <!-- 1. Her Portrait 4 (her-photo-5.png) -->
+        <figure class="masonry-item tall" tabindex="0" role="button" aria-label="View cute smile memory">
+          <div class="item-washi washi-blush" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="her-photo-5.png" alt="The cutest playful smile" loading="eager" />
+          </div>
+          <figcaption>
+            <span class="fig-title">The Cutest Smile</span>
+            <span class="fig-date">02.10.25 • chulbuli laugh</span>
+          </figcaption>
+        </figure>
+
+        <!-- 2. Her Portrait 5 (her-photo-6.png) -->
+        <figure class="masonry-item tall" tabindex="0" role="button" aria-label="View aesthetic silhouette memory">
+          <div class="item-washi washi-gold" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="her-photo-6.png" alt="Aesthetic pose portrait of her" loading="eager" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Aesthetic Pose</span>
+            <span class="fig-date">04.10.25 • chillest vibe ever</span>
+          </figcaption>
+        </figure>
+
+        <!-- 3. Flower Bouquet Photo -->
+        <figure class="masonry-item medium" tabindex="0" role="button" aria-label="View flowers memory">
+          <div class="item-washi washi-blush" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="flower.jpeg" alt="Bouquet of flowers at night" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Flowers for You</span>
+            <span class="fig-date">• for my favorite person</span>
+          </figcaption>
+        </figure>
+
+        <!-- 4. Her Portrait 1 -->
+        <figure class="masonry-item tall" tabindex="0" role="button" aria-label="View portrait memory 1">
+          <div class="item-washi washi-gold" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="her-photo-2.jpeg" alt="Effortlessly radiant and beautiful" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Effortlessly Radiant</span>
+            <span class="fig-date">• pure joy</span>
+          </figcaption>
+        </figure>
+
+        <!-- 5. Us Memory 3 (us-photo-3.jpeg) -->
+        <figure class="masonry-item tall" tabindex="0" role="button" aria-label="View mirror ride memory">
+          <div class="item-washi washi-rose" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="us-photo-3.jpeg" alt="Mirror reflection ride together" loading="eager" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Mirror Reflections</span>
+            <span class="fig-date">17.10.25 • that sweet look at you ♡</span>
+          </figcaption>
+        </figure>
+
+        <!-- 6. Her Portrait 3 -->
+        <figure class="masonry-item tall" tabindex="0" role="button" aria-label="View portrait memory 3">
+          <div class="item-washi washi-blush" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="her-photo-4.jpeg" alt="Pure magic and sweetest soul" />
+          </div>
+          <figcaption>
+            <span class="fig-title">First Flower</span>
+            <span class="fig-date">17.10.25 • sweetest day</span>
+          </figcaption>
+        </figure>
+
+        <!-- 7. Together Us Photo 1 -->
+        <figure class="masonry-item medium" tabindex="0" role="button" aria-label="View memory together 1">
+          <div class="item-washi washi-rose" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="us-photo.jpeg" alt="Moments made together" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Moments Made Together</span>
+            <span class="fig-date">17.10.25 • our favorite memories</span>
+          </figcaption>
+        </figure>
+
+        <!-- 8. Together Us Photo 2 -->
+        <figure class="masonry-item medium" tabindex="0" role="button" aria-label="View memory together 2">
+          <div class="item-washi washi-gold" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="us-photo-2.jpeg" alt="Laughs and happy moments together" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Heartfelt Adventures</span>
+            <span class="fig-date">17.10.25 • endless laughs</span>
+          </figcaption>
+        </figure>
+
+        <!-- 9. Together Us Boat Ride Photo -->
+        <figure class="masonry-item medium" tabindex="0" role="button" aria-label="View boat ride memory">
+          <div class="item-washi washi-rose" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="boat-ride-photo.jpeg" alt="Serene boat ride together" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Drifting in Love</span>
+            <span class="fig-date">17.10.25 • Boat ride</span>
+          </figcaption>
+        </figure>
+
+        <!-- 10. Holding Hands Aesthetic -->
+        <figure class="masonry-item short" tabindex="0" role="button" aria-label="View holding hands memory">
+          <div class="item-washi washi-blush" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="hands-photo.jpeg" alt="Holding hands gently" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Holding Onto Forever</span>
+            <span class="fig-date">17.10.25 • safe with you</span>
+          </figcaption>
+        </figure>
+
+        <!-- 11. Cozy Tea Moments -->
+        <figure class="masonry-item short" tabindex="0" role="button" aria-label="View cozy tea memory">
+          <div class="item-washi washi-gold" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="tea-photo.jpeg" alt="Warm tea and sweet conversations" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Cozy Conversations</span>
+            <span class="fig-date">17.10.25 • warm cups & peace</span>
+          </figcaption>
+        </figure>
+
+        <!-- 12. Sweet Cookies -->
+        <figure class="masonry-item short" tabindex="0" role="button" aria-label="View cookies treats memory">
+          <div class="item-washi washi-blush" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="cookies-photo.jpeg" alt="Fresh baked sweet cookies" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Sweet Little Treats</span>
+            <span class="fig-date">17.10.25 • little delights</span>
+          </figcaption>
+        </figure>
+
+        <!-- 13. Sweet Bites -->
+        <figure class="masonry-item short" tabindex="0" role="button" aria-label="View tasty bites memory">
+          <div class="item-washi washi-rose" aria-hidden="true"></div>
+          <div class="img-wrapper">
+            <img src="bites-photo.jpeg" alt="Delicious food bites together" />
+          </div>
+          <figcaption>
+            <span class="fig-title">Unfiltered Happiness</span>
+            <span class="fig-date">17.10.25 • simple joy</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CHAPTER 4: INTERACTIVE BIRTHDAY CAKE & MAKE A WISH -->
+    <section class="story-panel cake-panel reveal" id="cake-section" data-chapter="Chapter IV • Make A Wish">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 04</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="section-heading">
+        <span class="kicker">make a wish</span>
+        <h2 class="section-title">Make a Secret Birthday Wish</h2>
+        <p class="section-subtitle">Type your wish, blow into your mic or click the candles to blow them out 🎂✨</p>
+      </div>
+
+      <div class="cake-stage">
+        <!-- Secret Wish Input Box -->
+        <div class="wish-input-wrapper">
+          <div class="wish-input-box">
+            <span class="wish-icon">✨</span>
+            <input type="text" id="secret-wish-input" class="secret-wish-input"
+              placeholder="Type your secret birthday wish here... (kept safe ♡)" maxlength="80"
+              aria-label="Secret birthday wish" />
+          </div>
+          <p class="wish-hint">Your wish will turn into golden stardust when you blow out the candles ♡</p>
+        </div>
+
+        <!-- Ambient Candlelight Stage Glow -->
+        <div class="cake-ambient-glow" id="cake-ambient-glow"></div>
+
+        <div class="cake-container" id="birthday-cake" tabindex="0" role="region"
+          aria-label="Interactive birthday cake with candles">
+          <!-- Candles on Cake (Each clickable individually) -->
+          <div class="candles-row">
+            <div class="candle" id="candle-1" role="button" tabindex="0" title="Click to blow out candle 1"
+              aria-label="Candle 1">
+              <div class="flame">
+                <div class="flame-inner"></div>
+                <div class="flame-glow"></div>
+              </div>
+              <div class="smoke"></div>
+              <div class="wick"></div>
+              <div class="candle-stick candle-stripe-1"></div>
+            </div>
+
+            <div class="candle candle-center" id="candle-2" role="button" tabindex="0"
+              title="Click to blow out candle 2" aria-label="Candle 2">
+              <div class="flame">
+                <div class="flame-inner"></div>
+                <div class="flame-glow"></div>
+              </div>
+              <div class="smoke"></div>
+              <div class="wick"></div>
+              <div class="candle-stick candle-stripe-2"></div>
+            </div>
+
+            <div class="candle" id="candle-3" role="button" tabindex="0" title="Click to blow out candle 3"
+              aria-label="Candle 3">
+              <div class="flame">
+                <div class="flame-inner"></div>
+                <div class="flame-glow"></div>
+              </div>
+              <div class="smoke"></div>
+              <div class="wick"></div>
+              <div class="candle-stick candle-stripe-3"></div>
+            </div>
+          </div>
+
+          <!-- 3-Tier Illustrated Cake Body -->
+          <div class="cake-body">
+            <div class="cake-tier tier-top">
+              <div class="frosting-drips">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="berries-decoration">🍓 ✨ 🍓</div>
+            </div>
+            <div class="cake-tier tier-middle">
+              <div class="frosting-ribbon"></div>
+              <div class="tier-heart-accent">♡ ✧ ♡</div>
+            </div>
+            <div class="cake-tier tier-bottom">
+              <div class="frosting-pearls"></div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <!-- Breeze / Breath Ripple Visual -->
+        <div class="breath-wind-ripple" id="breath-wind" aria-hidden="true"></div>
+
+        <!-- Interactive Action Buttons -->
+        <div class="cake-actions">
+          <div class="cake-btn-row">
+            <button class="blow-candle-btn" id="blow-candle-btn" type="button">
+              <span class="candle-icon">💨</span>
+              <span id="blow-btn-text">Blow Out All Candles</span>
+            </button>
+
+            <button class="mic-blow-btn" id="mic-blow-btn" type="button"
+              title="Blow into your microphone like real candles">
+              <span class="mic-icon">🎙️</span>
+              <span id="mic-btn-text">Blow With Mic</span>
+            </button>
+
+            <button class="relight-btn" id="relight-btn" type="button" style="display: none;">
+              <span>🕯️ Relight & Wish Again</span>
+            </button>
+          </div>
+
+          <div class="wish-celebration-message" id="wish-message" aria-live="polite">
+            <div class="wish-sparkle-header">
+              <span class="big-sparkle">✨</span>
+              <h3>Happy Birthday! Your Wish is on its Way to the Stars!</h3>
+              <span class="big-sparkle">✨</span>
+            </div>
+            <div class="user-wish-display" id="user-wish-display" style="display: none;">
+              <span class="wish-quote">"</span>
+              <span id="user-wish-text"></span>
+              <span class="wish-quote">"</span>
+            </div>
+            <p>May your upcoming year be filled with pure joy, radiant health, deep laughter, and endless love ♡</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5: WAX-SEALED "OPEN WHEN..." ENVELOPES -->
+    <section class="story-panel envelopes-panel reveal" id="envelopes-section"
+      data-chapter="Chapter V • Sealed With Love">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 05</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="section-heading">
+        <span class="kicker">letters for you</span>
+        <h2 class="section-title">Open the Sealed Letters</h2>
+        <p class="section-subtitle">Click each wax seal to open the letters written straight from my heart ♡</p>
+      </div>
+
+      <div class="envelope-stack">
+        <!-- Envelope 1 -->
+        <article class="envelope" tabindex="0" role="button" aria-label="Open letter: when you need a smile">
+          <div class="envelope-top-flap"></div>
+          <button class="wax-seal" type="button" aria-label="Break wax seal">
+            <span class="wax-seal-monogram">♡</span>
+          </button>
+          <div class="envelope-front">
+            <span class="envelope-title">Open when you need a smile</span>
+            <span class="envelope-hint">tap to open 💌</span>
+          </div>
+          <div class="letter-card">
+            <div class="letter-badge">For You</div>
+            <p>
+              I hope you always know that some things in this world feel like warm sunshine, and you are one of them.
+              Whenever life feels hard or heavy, take a deep breath and remember how strong, special, and deeply loved
+              you are.
+            </p>
+            <div class="signature">with all my love ♡</div>
+          </div>
+        </article>
+
+        <!-- Envelope 2 -->
+        <article class="envelope" tabindex="0" role="button" aria-label="Open letter: when you need a gentle reminder">
+          <div class="envelope-top-flap"></div>
+          <button class="wax-seal" type="button" aria-label="Break wax seal">
+            <span class="wax-seal-monogram">✧</span>
+          </button>
+          <div class="envelope-front">
+            <span class="envelope-title">Open for a gentle reminder</span>
+            <span class="envelope-hint">tap to open 💌</span>
+          </div>
+          <div class="letter-card">
+            <div class="letter-badge">A Sweet Reminder</div>
+            <p>
+              The best thing about you is how real and true you are. You never have to pretend or try hard to impress
+              anyone.
+              Just being around you, seeing your kindness, and the way you care makes the whole world feel softer,
+              safer, and happier.
+            </p>
+            <div class="signature">with all my heart ♡</div>
+          </div>
+        </article>
+
+        <!-- Envelope 3 -->
+        <article class="envelope" tabindex="0" role="button" aria-label="Open letter: on your birthday night">
+          <div class="envelope-top-flap"></div>
+          <button class="wax-seal" type="button" aria-label="Break wax seal">
+            <span class="wax-seal-monogram">★</span>
+          </button>
+          <div class="envelope-front">
+            <span class="envelope-title">Open on your birthday night</span>
+            <span class="envelope-hint">tap to open 💌</span>
+          </div>
+          <div class="letter-card">
+            <div class="letter-badge">Birthday Wish</div>
+            <p>
+              On your special birthday, I wish you true peace in your heart, courage in everything you do, and dreams
+              bigger and brighter than ever before.
+              Enjoy every single moment today — no one deserves the best more than you.
+            </p>
+            <div class="signature">always by your side ♡</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAPTER 6: THE GLOWING MOON & MELODY CHAMBER -->
+    <section class="story-panel moon-panel reveal" id="moon-section" data-chapter="Chapter VI • The Celestial Melody">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 06</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="moon-scene">
+        <div class="moon-orbit" aria-hidden="true">
+          <span class="orbit-star s1"></span>
+          <span class="orbit-star s2"></span>
+          <span class="orbit-star s3"></span>
+          <span class="orbit-star s4"></span>
+          <span class="orbit-ring"></span>
+        </div>
+
+        <div class="big-heart" id="moon" tabindex="0" role="button"
+          aria-label="Click the moon to start the birthday soundtrack">
+          <div class="moon-crater c1"></div>
+          <div class="moon-crater c2"></div>
+          <div class="moon-crater c3"></div>
+          <div class="moon-glow-ring"></div>
+        </div>
+
+        <div class="moon-caption-wrap">
+          <h3 class="moon-title">The Moon Knows Your Song</h3>
+          <p class="moon-prompt">Click the luminous moon to fill the room with sweet music & shooting stars ♫</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 7: INTERACTIVE CONSTELLATION -->
+    <section class="story-panel constellation-panel reveal" id="constellation-section"
+      data-chapter="Chapter VII • Stargazing Wish">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 07</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="section-heading">
+        <span class="kicker">stargazing</span>
+        <h2 class="section-title">Connect the Heart Constellation</h2>
+        <p class="section-subtitle">Drag the golden star to ignite the sky with your birthday wish ✨</p>
+      </div>
+
+      <div class="constellation-stage">
+        <div class="star-field" id="star-field" aria-label="Constellation interactive board">
+          <svg class="heart-constellation" viewBox="0 0 760 380" aria-hidden="true">
+            <!-- Golden Stardust Path -->
+            <path id="constellation-path"
+              d="M 380,310 C 260,230 140,160 140,90 C 140,30 200,10 260,35 C 310,55 350,95 380,130 C 410,95 450,55 500,35 C 560,10 620,30 620,90 C 620,160 500,230 380,310 Z"
+              fill="none" stroke="rgba(240, 200, 130, 0.4)" stroke-width="2" stroke-dasharray="6,6"
+              stroke-linecap="round"></path>
+            <path id="constellation-glow-path"
+              d="M 380,310 C 260,230 140,160 140,90 C 140,30 200,10 260,35 C 310,55 350,95 380,130 C 410,95 450,55 500,35 C 560,10 620,30 620,90 C 620,160 500,230 380,310 Z"
+              fill="none" stroke="url(#gold-glow)" stroke-width="3" stroke-linecap="round" class="glow-path"></path>
+            <defs>
+              <linearGradient id="gold-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffd56b" />
+                <stop offset="50%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Star nodes -->
+          <span class="star-dot dot-1" data-star="1">✦</span>
+          <span class="star-dot dot-2" data-star="2">✦</span>
+          <span class="star-dot dot-3" data-star="3">✦</span>
+          <span class="star-dot dot-4" data-star="4">✦</span>
+          <span class="star-dot dot-5" data-star="5">✦</span>
+          <span class="star-dot dot-6" data-star="6">✦</span>
+          <span class="star-dot dot-7" data-star="7">✦</span>
+
+          <!-- Draggable Golden Star -->
+          <div class="drag-star" id="drag-star" role="button" aria-label="Drag this star around the constellation"
+            tabindex="0">
+            <div class="drag-star-inner">★</div>
+            <div class="drag-star-pulse"></div>
+          </div>
+        </div>
+
+        <div class="birthday-word" id="constellation-word" aria-live="polite">
+          <span class="sparkle">✨</span> Happy Birthday to the Brightest Star <span class="sparkle">✨</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 8: THE FINAL LETTER & KEEPSAKE -->
+    <section class="story-panel final-panel reveal" id="letter-section" data-chapter="Chapter VIII • Forever & Always">
+      <div class="chapter-indicator">
+        <span class="chapter-number">Chapter 08</span>
+        <span class="chapter-line"></span>
+      </div>
+
+      <div class="letter-sheet">
+        <div class="letter-seal-badge" aria-hidden="true">
+          <span>Special Edition</span>
+        </div>
+
+        <div class="pressed-flowers" aria-hidden="true">
+          <span class="petal p1"></span>
+          <span class="petal p2"></span>
+          <span class="petal p3"></span>
+        </div>
+
+        <div class="letter-layout">
+          <div class="letter-polaroid-wrap">
+            <div class="polaroid letter-polaroid">
+              <div class="polaroid-pin" aria-hidden="true"></div>
+              <div class="polaroid-inner">
+                <img src="her-photo.jpeg" alt="Portrait of someone special" />
+              </div>
+              <p class="polaroid-caption">forever my favorite ♡</p>
+            </div>
+          </div>
+
+          <div class="letter-copy">
+            <h2 class="final-letter-title">Dearest Priya,</h2>
+            <p>
+              Happy Birthday.
+            </p>
+            <p>
+              I hope this little website serves as a gentle reminder of how truly special, deeply appreciated, and
+              wonderful you are.
+              Not because today asks for praise, but because it is simply true on every single day of the year.
+            </p>
+            <p>
+              30-01-2023 — the day I saw you for the first time and somehow fell in love with you.
+              I still remember you wearing that white T-shirt, and honestly, before that day, I never
+              believed in love at first sight. But then destiny had its own plans, and somehow, our paths crossed.
+              Maybe this is what people mean by string theory — two people connected by an invisible string,
+              always meant to find each other. And I’m just grateful that my string led me to you.
+            </p>
+            <p>
+              The amount of love i have for you can't be expressed in words, but i hope you feel it through this
+              website. May you get every happiness and success in your life. Always keep smiling like you do.
+            </p>
+            <br>
+            <div class="signature">
+              — someone who's quietly rooting for you, always ♡
+            </div>
+          </div>
+        </div>
+
+        <div class="letter-actions">
+          <button class="keepsake-btn" id="save-keepsake-btn" type="button">
+            <span>🎁 Save Birthday Keepsake</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ALWAYS SLOW DANCING COUPLE WIDGET (BOTTOM OF SCREEN) -->
+  <div class="dancing-couple-widget" id="dancing-couple" role="img"
+    aria-label="Couple in black wedding dress slow dancing" title="dancing through time with you ♡">
+    <div class="couple-spotlight"></div>
+
+    <!-- Floating Romantic Melody Notes & Hearts -->
+    <div class="floating-dance-notes" aria-hidden="true">
+      <span class="d-note n1">♡</span>
+      <span class="d-note n2">♪</span>
+      <span class="d-note n3">✧</span>
+      <span class="d-note n4">♫</span>
+    </div>
+
+    <!-- Animated Slow Dancing Silhouette -->
+    <div class="couple-silhouette-stage">
+      <svg class="couple-svg" viewBox="0 0 160 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="couple-shadow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2a1a20" />
+            <stop offset="50%" stop-color="#180e12" />
+            <stop offset="100%" stop-color="#090507" />
+          </linearGradient>
+          <radialGradient id="dance-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(255, 213, 107, 0.35)" />
+            <stop offset="100%" stop-color="rgba(255, 213, 107, 0)" />
+          </radialGradient>
+        </defs>
+
+        <!-- Ambient Floor Glow -->
+        <ellipse cx="80" cy="190" rx="60" ry="10" fill="url(#dance-glow)" />
+
+        <!-- COUPLE DANCE SILHOUETTE GROUP -->
+        <g class="dancing-couple-figures" fill="url(#couple-shadow-grad)">
+          <!-- Groom Head & Hair -->
+          <path d="M66,32 C66,22 76,14 85,16 C92,18 96,25 94,34 C92,40 85,44 76,43 C69,42 66,38 66,32 Z" />
+          <!-- Groom Neck & Collar -->
+          <path d="M75,42 L84,42 L88,52 L73,52 Z" />
+          <!-- Groom Tuxedo & Body -->
+          <path d="M68,52 L94,52 L98,82 L90,118 L76,118 L70,82 Z" />
+          <!-- Groom Arm Holding Bride Waist -->
+          <path d="M92,54 C104,64 108,82 98,96 C93,92 90,86 88,80 C93,72 90,62 86,56 Z" />
+          <!-- Groom Legs / Tuxedo Trousers -->
+          <path d="M72,118 L82,118 L83,184 L71,184 Z" />
+          <path d="M83,118 L93,118 L95,184 L85,184 Z" />
+          <!-- Groom Shoes -->
+          <path d="M67,182 L84,182 L84,188 L65,188 Z" />
+          <path d="M85,182 L102,182 L100,188 L83,188 Z" />
+
+          <!-- Bride Head & Elegant Hair Updo with Veil Accent -->
+          <path d="M86,36 C86,28 94,22 102,24 C109,26 113,32 111,40 C109,46 103,49 96,48 C90,47 86,43 86,36 Z" />
+          <!-- Flowing Delicate Veil Line -->
+          <path d="M102,25 C116,36 122,62 118,88 C115,88 112,60 100,32 Z" opacity="0.65" />
+          <!-- Bride Neck & Bare Shoulder -->
+          <path d="M92,47 L99,47 L102,56 L94,56 Z" />
+          <!-- Bride Arm on Groom's Shoulder -->
+          <path d="M94,56 C86,58 78,54 74,52 C73,55 77,62 84,66 C88,68 94,66 98,62 Z" />
+          <!-- Bride Dress Bodice (Romantic Wedding Gown) -->
+          <path d="M86,56 C82,68 84,85 88,96 C94,96 102,94 105,82 C107,72 104,60 98,56 Z" />
+
+          <!-- Bride Flowing Ballgown / Wedding Skirt Flare -->
+          <path class="flowing-skirt"
+            d="M86,94 C76,115 54,152 46,186 C65,190 100,192 128,186 C124,152 106,118 98,94 Z" />
+          <!-- Flowing Gown Train Wave Accent -->
+          <path class="skirt-shadow-line"
+            d="M48,186 C70,182 105,184 126,186 C122,176 110,148 98,118 C94,136 78,166 48,186 Z"
+            fill="rgba(0,0,0,0.22)" />
+        </g>
+
+        <!-- Golden Stardust Sparkle Accents on Bride & Groom -->
+        <circle cx="88" cy="74" r="1.5" fill="#ffd56b" />
+        <circle cx="106" cy="140" r="1.2" fill="#ffd56b" opacity="0.8" />
+        <circle cx="68" cy="160" r="1.2" fill="#ffd56b" opacity="0.8" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- FLOATING VINYL MUSIC CONTROLLER -->
+  <aside class="floating-vinyl" id="floating-vinyl-player" aria-label="Music player">
+    <div class="vinyl-record" id="vinyl-disc">
+      <div class="vinyl-grooves"></div>
+      <div class="vinyl-center-label">
+        <span class="vinyl-note">♫</span>
+      </div>
+    </div>
+
+    <div class="vinyl-info">
+      <span class="track-title" id="track-title">Birthday Serenade ♡</span>
+      <div class="equalizer-bars" id="equalizer-bars">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="vinyl-controls">
+      <button class="vinyl-play-btn" id="floating-play-toggle" type="button" aria-label="Play or pause music">
+        <span id="play-icon">▶</span>
+      </button>
+      <div class="volume-slider-wrap">
+        <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="0.7"
+          aria-label="Volume slider" />
+      </div>
+    </div>
+  </aside>
+
+  <!-- REAL HTML5 AUDIO ELEMENT -->
+  <audio id="birthday-audio" preload="auto" loop>
+    <source src="song.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div class="image-modal" id="image-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="image-modal-backdrop" id="modal-backdrop"></div>
+    <div class="image-modal-inner">
+      <button class="modal-close" id="modal-close-btn" type="button" aria-label="Close memory modal">×</button>
+      <div class="modal-polaroid-frame">
+        <img src="" alt="Memory detail view" id="modal-img" />
+        <div class="modal-caption" id="modal-caption-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEEPSAKE MODAL -->
+  <div class="keepsake-modal" id="keepsake-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="keepsake-modal-backdrop" id="keepsake-backdrop"></div>
+    <div class="keepsake-modal-inner">
+      <button class="modal-close" id="keepsake-close-btn" type="button" aria-label="Close keepsake">×</button>
+      <div class="keepsake-card">
+        <div class="keepsake-stamp">♡ BIRTHDAY ARCHIVE ♡</div>
+        <h2>Happy Birthday, My Favorite Person! ✨</h2>
+        <p>
+          "May your days be painted with sunshine, your nights filled with peace, and your heart surrounded by love."
+        </p>
+        <div class="keepsake-polaroid-mini">
+          <img src="her-photo.jpeg" alt="Portrait of someone special" />
+        </div>
+        <div class="keepsake-footer">
+          <span>Preserved with love ♡ Forever & Always</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GENTLE REMINDER MODAL IN STORYBOOK -->
+  <div class="reminder-modal" id="reminder-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="reminder-modal-backdrop" id="reminder-modal-backdrop"></div>
+    <div class="reminder-modal-inner">
+      <button class="modal-close" id="reminder-modal-close-btn" type="button"
+        aria-label="Close gentle reminder">×</button>
+
+      <article class="reminder-parchment-card in-modal">
+        <!-- Vintage Decorative Corner Filigrees -->
+        <div class="corner-filigree top-left" aria-hidden="true">❧</div>
+        <div class="corner-filigree top-right" aria-hidden="true">☙</div>
+        <div class="corner-filigree bottom-left" aria-hidden="true">❦</div>
+        <div class="corner-filigree bottom-right" aria-hidden="true">❦</div>
+
+        <!-- Romantic Silk Ribbon & Wax Seal Monogram -->
+        <div class="wax-seal-wrapper" aria-hidden="true">
+          <div class="silk-ribbon ribbon-left"></div>
+          <div class="silk-ribbon ribbon-right"></div>
+          <div class="wax-seal-badge">
+            <span class="wax-ring-outer"></span>
+            <span class="wax-heart">♡</span>
+            <span class="wax-glow-ring"></span>
+          </div>
+        </div>
+
+        <header class="reminder-header">
+          <div class="reminder-badge-wrap">
+            <span class="reminder-badge">
+              <span class="badge-sparkle">✦</span>
+              <span>an intimate note for you</span>
+              <span class="badge-sparkle">✦</span>
+            </span>
+          </div>
+          <h2 class="reminder-title">A Gentle Reminder</h2>
+          <p class="reminder-tagline">Take a gentle breath, turn the volume up, and remember this always... ♡</p>
+        </header>
+
+        <div class="reminder-letter-body">
+          <div class="letter-top-flourish" aria-hidden="true">
+            <span>✦</span> · · · <span class="heart-doodle">♡</span> · · · <span>✦</span>
+          </div>
+
+          <div class="letter-greeting">
+            <span class="greeting-script">My Dearest,</span>
+            <span class="greeting-heart">💖</span>
+          </div>
+
+          <div class="letter-paragraphs">
+            <p class="letter-para intro-para">
+              <span class="illuminated-dropcap">I</span>'ve always been an introvert, and if I'm honest, I've spent more
+              time hiding my feelings than expressing them. Every time I wanted to say something, my shyness seemed to
+              find the words before I could.
+            </p>
+
+            <div class="romantic-highlight-box">
+              <span class="quote-mark open-quote">“</span>
+              <p class="highlight-text">
+                So today, I'm trying something different.
+              </p>
+              <span class="quote-mark close-quote">”</span>
+              <div class="box-shimmer" aria-hidden="true"></div>
+            </div>
+
+            <p class="letter-para">
+              I gathered every piece of courage I had and wove it into this quiet sanctuary for you. It isn't about
+              perfection, it's about finally giving a voice to the feelings that have lived quietly in my heart for so
+              long. Every photograph, every gentle melody, and every word here was chosen with a depth of care that
+              simple conversations could never fully capture.
+            </p>
+
+            <p class="letter-para ending-para">
+              As you step into the memories ahead, I hope you feel just how truly precious, seen, and cherished you are.
+              This wasn't just built for your birthday, it was created as a timeless testament to the beautiful light
+              and
+              peace you bring into my life, one gentle heartbeat at a time. ♡
+            </p>
+          </div>
+
+          <div class="letter-bottom-layout">
+            <div class="reminder-mini-polaroid">
+              <div class="mini-pin" aria-hidden="true"></div>
+              <div class="mini-frame">
+                <img src="her-photo.jpeg" alt="The birthday girl smiling" />
+              </div>
+              <span class="mini-caption">my courage & heart ♡</span>
+            </div>
+
+            <div class="letter-signature-block">
+              <span class="signature-pre">With all my courage & care,</span>
+              <span class="signature-name">
+                Always Yours <span class="signature-heart-pulse">♡</span>
+              </span>
+              <span class="signature-date">September 02 • For Your Birthday</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

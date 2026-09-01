@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Secret Scrapbook ♡ Unlock Your Birthday World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="her-photo-5.png" />
+  <link rel="preload" as="image" href="her-photo-6.png" />
+</head>
+
+<body class="index-body">
+  <!-- Ambient fairy lights canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Multiverse Warp & Dimension Portal Canvas -->
+  <canvas id="multiverse-canvas" class="multiverse-canvas" aria-hidden="true"></canvas>
+
+  <!-- Dreamy Romantic Heart Bloom Overlay -->
+  <div id="bloom-overlay" class="bloom-overlay" aria-hidden="true">
+    <div class="romantic-overlay-backdrop"></div>
+
+    <!-- Center Romantic Heart Stage -->
+    <div class="romantic-stage">
+      <!-- Floating Romantic Bokeh & Glow Orbs -->
+      <div class="romantic-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <!-- Layered Radiant Heart Portal -->
+      <div class="heart-portal-wrapper">
+        <svg class="heart-portal-svg" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="portal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="25%" stop-color="#ffe5ec" />
+              <stop offset="55%" stop-color="#ff8fab" />
+              <stop offset="85%" stop-color="#fb6f92" />
+              <stop offset="100%" stop-color="#d90429" />
+            </linearGradient>
+            <linearGradient id="gold-glow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff8e7" />
+              <stop offset="40%" stop-color="#ffd56b" />
+              <stop offset="100%" stop-color="#e29578" />
+            </linearGradient>
+            <filter id="heart-glow">
+              <feGaussianBlur stdDeviation="3.5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Outer pulsing heart contour -->
+          <path class="heart-portal-path outer-heart"
+            d="M50,88 C20,60 5,42 5,26 C5,12 16,3 30,3 C39,3 46,8 50,16 C54,8 61,3 70,3 C84,3 95,12 95,26 C95,42 80,60 50,88 Z"
+            fill="none" stroke="url(#portal-gradient)" stroke-width="2.5" filter="url(#heart-glow)" />
+          <!-- Mid sparkling dashed heart -->
+          <path class="heart-portal-path mid-heart"
+            d="M50,88 C20,60 5,42 5,26 C5,12 16,3 30,3 C39,3 46,8 50,16 C54,8 61,3 70,3 C84,3 95,12 95,26 C95,42 80,60 50,88 Z"
+            fill="none" stroke="url(#gold-glow-gradient)" stroke-width="1.8" stroke-dasharray="6,4" />
+          <!-- Inner soft glowing heart fill -->
+          <path class="heart-portal-path inner-heart-fill"
+            d="M50,88 C20,60 5,42 5,26 C5,12 16,3 30,3 C39,3 46,8 50,16 C54,8 61,3 70,3 C84,3 95,12 95,26 C95,42 80,60 50,88 Z"
+            fill="rgba(255, 140, 170, 0.15)" />
+        </svg>
+
+        <!-- Core sparkling heart icon -->
+        <div class="heart-core-glow">
+          <span class="core-heart-symbol">♡</span>
+        </div>
+
+        <!-- Pulsing Love Halo Rings -->
+        <div class="love-halo halo-1" aria-hidden="true"></div>
+        <div class="love-halo halo-2" aria-hidden="true"></div>
+      </div>
+
+      <!-- Romantic Dedication Message -->
+      <div class="romantic-message-container">
+        <span class="romantic-tag">✦ welcome to your world ✦</span>
+        <h2 class="romantic-title">Happy Birthday, My Love</h2>
+        <p class="romantic-subtitle">Every beat of my heart belongs to you ♡</p>
+        <div class="romantic-status">
+          <span class="status-heart">💖</span>
+          <span class="status-text">Unlocking your sweetest memories...</span>
+          <span class="status-sparkle">✨</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+         GENTLE REMINDER SCREEN (Appears first when she opens the link)
+         ============================================================ -->
+  <section class="gentle-reminder-screen" id="gentle-reminder-screen" aria-label="A Gentle Reminder For You">
+    <!-- Ambient Glow Orbs -->
+    <div class="reminder-glow-orb orb-left" aria-hidden="true"></div>
+    <div class="reminder-glow-orb orb-right" aria-hidden="true"></div>
+
+    <div class="reminder-envelope-wrap">
+      <!-- Floating Romantic Glow & Stardust -->
+      <div class="reminder-decorations" aria-hidden="true">
+        <div class="sparkle-star s1">✦</div>
+        <div class="sparkle-star s2">✧</div>
+        <div class="sparkle-star s3">✦</div>
+        <div class="floating-mini-petal p1">🌸</div>
+        <div class="floating-mini-petal p2">✨</div>
+        <div class="floating-mini-petal p3">💖</div>
+        <div class="floating-mini-petal p4">🌹</div>
+      </div>
+
+      <!-- The Parchment Letter Card -->
+      <article class="reminder-parchment-card" id="reminder-card">
+        <!-- Vintage Decorative Corner Filigrees -->
+        <div class="corner-filigree top-left" aria-hidden="true">❧</div>
+        <div class="corner-filigree top-right" aria-hidden="true">☙</div>
+        <div class="corner-filigree bottom-left" aria-hidden="true">❦</div>
+        <div class="corner-filigree bottom-right" aria-hidden="true">❦</div>
+
+        <!-- Vintage Washi Tapes -->
+        <div class="washi-tape washi-top-left" aria-hidden="true">
+          <span class="washi-pattern">✧ ♡ ✧</span>
+        </div>
+        <div class="washi-tape washi-top-right" aria-hidden="true">
+          <span class="washi-pattern">✧ ♡ ✧</span>
+        </div>
+
+        <!-- Romantic Silk Ribbon & Wax Seal Monogram -->
+        <div class="wax-seal-wrapper" aria-hidden="true">
+          <div class="silk-ribbon ribbon-left"></div>
+          <div class="silk-ribbon ribbon-right"></div>
+          <div class="wax-seal-badge">
+            <span class="wax-ring-outer"></span>
+            <span class="wax-heart">♡</span>
+            <span class="wax-glow-ring"></span>
+          </div>
+        </div>
+
+        <header class="reminder-header">
+          <div class="reminder-badge-wrap">
+            <span class="reminder-badge">
+              <span class="badge-sparkle">✦</span>
+              <span>an intimate note for you</span>
+              <span class="badge-sparkle">✦</span>
+            </span>
+          </div>
+          <h1 class="reminder-title">A Gentle Reminder</h1>
+          <p class="reminder-tagline">Before you step into your birthday world, take a slow breath... ♡</p>
+        </header>
+
+        <!-- Heartfelt Letter Content (Feelings / Note) -->
+        <div class="reminder-letter-body">
+          <!-- Vintage Paper Header Doodle -->
+          <div class="letter-top-flourish" aria-hidden="true">
+            <span>✦</span> · · · <span class="heart-doodle">♡</span> · · · <span>✦</span>
+          </div>
+
+          <div class="letter-greeting">
+            <span class="greeting-script">My Dearest,</span>
+            <span class="greeting-heart">💖</span>
+          </div>
+
+          <!-- FEELINGS PARAGRAPHS WITH ROMANTIC HIGHLIGHTS -->
+          <div class="letter-paragraphs">
+            <p class="letter-para intro-para">
+              <span class="illuminated-dropcap">I</span>'ve always been an introvert, and if I'm honest, I've spent more
+              time hiding my feelings than expressing them. Every time I wanted to say something, my shyness seemed to
+              find the words before I could.
+            </p>
+
+            <!-- Romantic Floating Highlight Banner -->
+            <div class="romantic-highlight-box">
+              <span class="quote-mark open-quote">“</span>
+              <p class="highlight-text">
+                So today, I'm trying something different.
+              </p>
+              <span class="quote-mark close-quote">”</span>
+              <div class="box-shimmer" aria-hidden="true"></div>
+            </div>
+
+            <p class="letter-para">
+              I gathered every piece of courage I had and wove it into this quiet sanctuary for you. It isn't about
+              perfection—it's about finally giving a voice to the feelings that have lived quietly in my heart for so
+              long. Every photograph, every gentle melody, and every word here was chosen with a depth of care that
+              simple conversations could never fully capture.
+            </p>
+
+            <p class="letter-para ending-para">
+              As you step into the memories ahead, I hope you feel just how truly precious, seen, and cherished you are.
+              This wasn't just built for your birthday—it was created as a timeless testament to the beautiful light and
+              peace you bring into my life, one gentle heartbeat at a time. ♡
+            </p>
+          </div>
+
+          <!-- Bottom Layout: Signature & Mini Keepsake Polaroid -->
+          <div class="letter-bottom-layout">
+            <!-- Mini Tucked Polaroid Accent -->
+            <div class="reminder-mini-polaroid" id="reminder-polaroid">
+              <div class="mini-pin" aria-hidden="true"></div>
+              <div class="mini-frame">
+                <img src="her-photo.jpeg" alt="The birthday girl smiling" />
+              </div>
+              <span class="mini-caption">the smile that gives me courage ♡</span>
+            </div>
+
+            <!-- Romantic Signature -->
+            <div class="letter-signature-block">
+              <span class="signature-pre">With all my courage & care,</span>
+              <span class="signature-name">
+                Always Yours <span class="signature-heart-pulse">♡</span>
+              </span>
+              <span class="signature-date">September 02 • For Your Birthday</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audio & Earphone Experience Tip -->
+        <div class="reminder-audio-hint">
+          <span class="audio-hint-icon">🎧</span>
+          <span class="audio-hint-text">
+            <strong>Romantic Experience:</strong> Put on your earphones & turn up the volume for the soundtrack
+          </span>
+          <span class="audio-hint-sparkle">✨</span>
+        </div>
+
+        <!-- Action Button to Step Inside -->
+        <div class="reminder-action-wrap">
+          <button type="button" class="reminder-continue-btn" id="reminder-continue-btn"
+            aria-label="Continue to your birthday surprise">
+            <span class="btn-shine" aria-hidden="true"></span>
+            <span class="btn-text">Step Inside Your World</span>
+            <span class="btn-arrow">✨ ♡</span>
+          </button>
+          <p class="btn-subtext">Click above to unlock your birthday scrapbook</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+         MAIN VAULT PIN CONTAINER (Revealed after reading gentle reminder)
+         ============================================================ -->
+  <main class="vault-container" id="vault-container" style="display: none;">
+    <!-- Subtle Back to Reminder Button -->
+    <div class="vault-top-actions">
+      <button type="button" class="back-to-reminder-btn" id="back-to-reminder-btn"
+        title="Read gentle reminder note again">
+        <span class="back-icon">💌</span>
+        <span>Read Gentle Reminder</span>
+      </button>
+    </div>
+
+    <div class="vault-card" id="vault-card">
+      <!-- Decorative Vintage Washi Tapes -->
+      <div class="scrapbook-tape tape-top" aria-hidden="true"></div>
+      <div class="scrapbook-tape tape-bottom" aria-hidden="true"></div>
+
+      <div class="vault-grid">
+        <!-- LEFT SIDE: SCRAPBOOK MEMORY CONTENT (SINGLE PHOTO ONLY) -->
+        <div class="vault-content-side">
+          <div class="scrapbook-single-showcase">
+            <!-- Single Focal Polaroid Portrait with 3D Tilt -->
+            <div class="polaroid single-vault-polaroid" id="gate-polaroid">
+              <div class="polaroid-pin" aria-hidden="true"></div>
+              <div class="polaroid-inner">
+                <img src="her-photo.jpeg" alt="Portrait of someone special" />
+              </div>
+              <p class="polaroid-caption">my favorite person ♡</p>
+            </div>
+
+            <!-- Romantic Handwritten Note -->
+            <div class="vault-note-single">
+              <div class="note-pushpin" aria-hidden="true"></div>
+              <h2 class="note-title">Secret Scrapbook</h2>
+              <p class="note-lines">
+                A little corner of the universe made just for you.<br />
+                Every little smile & memory kept safe inside ♡
+              </p>
+              <div class="note-doodle">✦ ✧ ✦</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: PIN KEYPAD & BIRTHDAY VAULT -->
+        <div class="vault-keypad-side">
+          <div class="vault-header">
+            <div class="vault-badge">Birthday Passcode</div>
+            <h1 class="vault-title">Enter Your Birthday</h1>
+            <p class="vault-subtitle">Enter your 4-digit birthday to unlock the portal</p>
+          </div>
+
+          <!-- PIN Display Boxes -->
+          <div class="pin-display" id="pin-display" aria-label="PIN digits">
+            <div class="digit-box" data-index="0"></div>
+            <div class="digit-box" data-index="1"></div>
+            <div class="digit-box" data-index="2"></div>
+            <div class="digit-box" data-index="3"></div>
+          </div>
+
+          <!-- Hidden input to capture physical keyboard / mobile virtual keyboard -->
+          <input type="text" id="hidden-pin-input" class="hidden-pin-input" maxlength="4" inputmode="numeric"
+            autocomplete="off" autofocus aria-label="Enter 4 digit pin" />
+
+          <!-- Interactive Tactile Number Keypad -->
+          <div class="keypad-grid" aria-label="Number keypad">
+            <button type="button" class="key-btn" data-key="1">1</button>
+            <button type="button" class="key-btn" data-key="2">2</button>
+            <button type="button" class="key-btn" data-key="3">3</button>
+            <button type="button" class="key-btn" data-key="4">4</button>
+            <button type="button" class="key-btn" data-key="5">5</button>
+            <button type="button" class="key-btn" data-key="6">6</button>
+            <button type="button" class="key-btn" data-key="7">7</button>
+            <button type="button" class="key-btn" data-key="8">8</button>
+            <button type="button" class="key-btn" data-key="9">9</button>
+            <button type="button" class="key-btn key-action" data-key="clear" title="Clear">C</button>
+            <button type="button" class="key-btn" data-key="0">0</button>
+            <button type="button" class="key-btn key-action" data-key="backspace" title="Delete">⌫</button>
+          </div>
+
+          <!-- Unlock Action Button -->
+          <div class="vault-action-wrap">
+            <button type="button" class="vault-unlock-btn" id="vault-unlock-btn">
+              <span>Unlock Universe</span>
+              <span class="btn-sparkle">✨</span>
+            </button>
+          </div>
+
+          <!-- Hint Helper -->
+          <div class="hint-container">
+            <button class="hint-toggle-btn" type="button" id="hint-toggle">
+              <span class="sparkle-icon">✨</span> Need a hint?
+            </button>
+            <div class="hint-bubble" id="hint-bubble">
+              The day when the world became more beautiful ♡
+            </div>
+          </div>
+
+          <div class="pin-message" id="pin-message" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
